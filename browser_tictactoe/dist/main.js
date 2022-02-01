@@ -23,9 +23,9 @@ eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\
 /*!*************************!*\
   !*** ./src/ttt-view.js ***!
   \*************************/
-/***/ ((module) => {
+/***/ (() => {
 
-eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n  }\n\n  setupBoard() {}\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
+eval("throw new Error(\"Module parse failed: Unexpected token (8:16)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n| \\n|   setupBoard() {\\n>     let board = <ul class=\\\"board\\\">\\n|       <li id=\\\"0,0\\\"></li>\\n|       <li id=\\\"0,1\\\"></li>\");\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
 
 /***/ }),
 
