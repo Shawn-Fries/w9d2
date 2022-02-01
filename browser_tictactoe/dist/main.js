@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\") // require appropriate file\nconst Game = __webpack_require__(/*! ../ttt_node/game.js */ \"./ttt_node/game.js\")// require appropriate file\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  // Your code here\n  new Game();\n});\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\") // require appropriate file\nconst Game = __webpack_require__(/*! ../ttt_node/game.js */ \"./ttt_node/game.js\")// require appropriate file\n\ndocument.addEventListener(\"DOMContentLoaded\", () => {\n  // Your code here\n  let game = new Game();\n  let el = document.querySelector(\".ttt\")\n  new View(game, el);\n});\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
