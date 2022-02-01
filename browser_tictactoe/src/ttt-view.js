@@ -5,19 +5,15 @@ class View {
   }
 
   setupBoard() {
-    let board = <ul class="board">
-      <li id="0,0"></li>
-      <li id="0,1"></li>
-      <li id="0,2"></li>
-      <br/>
-      <li id="1,0"></li>
-      <li id="1,1"></li>
-      <li id="1,2"></li>
-      <br/>
-      <li id="2,0"></li>
-      <li id="2,1"></li>
-      <li id="2,2"></li>
-    </ul>
+    let ul = document.createElement("ul");
+    this.el.appendChild(ul);
+    for (let i = 0; i < 3; i++) {
+      for (let j = 0; j < 3; j++) {
+        let li = document.createElement("li");
+        li.append(`${i}, ${j}`);
+        ul.appendChild(li);
+      }
+    }
   }
   
   bindEvents() {}
