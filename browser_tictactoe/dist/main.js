@@ -25,7 +25,7 @@ eval("const View = __webpack_require__(/*! ./ttt-view.js */ \"./src/ttt-view.js\
   \*************************/
 /***/ ((module) => {
 
-eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n  }\n\n  setupBoard() {\n    let ul = document.createElement(\"ul\");\n    this.el.appendChild(ul);\n    for (let i = 0; i < 3; i++) {\n      for (let j = 0; j < 3; j++) {\n        let li = document.createElement(\"li\");\n        li.append(`${i}, ${j}`);\n        ul.appendChild(li);\n      }\n    }\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
+eval("class View {\n  constructor(game, el) {\n    this.game = game;\n    this.el = el;\n  }\n\n  setupBoard() {\n    let ul = document.createElement(\"ul\");\n    this.el.appendChild(ul);\n    for (let i = 0; i < 3; i++) {\n      for (let j = 0; j < 3; j++) {\n        let li = document.createElement(\"li\");\n        //li.append(`${i}, ${j}`);\n        li.setAttribute('data-pos', `[${ i },${ j }]`);\n        ul.appendChild(li);\n      }\n    }\n  }\n  \n  bindEvents() {}\n\n  handleClick(e) {}\n\n  makeMove(square) {}\n\n}\n\nmodule.exports = View;\n\n\n//# sourceURL=webpack:///./src/ttt-view.js?");
 
 /***/ }),
 
